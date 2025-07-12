@@ -1,174 +1,135 @@
-const autos = [
+const videojuegos = [
 	{
-		marca: 'BMW',
-		modelo: 'Serie 3',
-		year: 2020,
+		nombre: 'Clair Obscur:Expedition 33',
+		consola: 'pc',
+		year: 2023,
 		precio: 30000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		genero: 'rpg'
 	},
 	{ 
-        marca: 'Audi', 
-        modelo: 'A4', 
-        year: 2020, 
-        precio: 40000, 
-        puertas: 4, 
-        color: 'Negro', 
-        transmision: 'automatico' 
+        nombre: 'Death Stranding 2',
+		consola: 'ps5',
+		year: 2024,
+		precio: 15000,
+		genero: 'accion'
     },
 	{
-		marca: 'Ford',
-		modelo: 'Mustang',
-		year: 2015,
+		nombre: 'Red Dead Redemption 2',
+		consola: 'xbo',
+		year: 2020,
 		precio: 20000,
-		puertas: 2,
-		color: 'Blanco',
-		transmision: 'automatico'
+		genero: 'accion'
 	},
 	{ 
-        marca: 'Audi', 
-        modelo: 'A6', 
-        year: 2020, 
-        precio: 35000, 
-        puertas: 4, 
-        color: 'Negro', 
-        transmision: 'automatico' 
+       	nombre: 'Resident Evil 4 Remake',
+		consola: 'ps5',
+		year: 2023,
+		precio: 30000,
+		genero: 'terror'
     },
 	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
-		year: 2016,
-		precio: 70000,
-		puertas: 4,
-		color: 'Rojo',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
-		year: 2015,
+		nombre: 'The last of us II',
+		consola: 'PS5',
+		year: 2024,
 		precio: 25000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		genero: 'accion'
 	},
 	{
-		marca: 'Chevrolet',
-		modelo: 'Camaro',
-		year: 2018,
-		precio: 60000,
-		puertas: 2,
-		color: 'Rojo',
-		transmision: 'manual'
-	},
-	{ 
-        marca: 'Ford', 
-        modelo: 'Mustang', 
-        year: 2019, 
-        precio: 80000, 
-        puertas: 2, 
-        color: 'Rojo', 
-        transmision: 'manual' 
-    },
-	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
-		year: 2020,
-		precio: 40000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{ 
-        marca: 'Audi', 
-        modelo: 'A3', 
-        year: 2017, 
-        precio: 55000, 
-        puertas: 2, 
-        color: 'Negro', 
-        transmision: 
-        'manual' 
-    },
-	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
-		year: 2020,
-		precio: 25000,
-		puertas: 2,
-		color: 'Rojo',
-		transmision: 'manual'
-	},
-	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
-		year: 2018,
-		precio: 45000,
-		puertas: 4,
-		color: 'Azul',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
-		year: 2019,
-		precio: 90000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{ 
-        marca: 'Ford', 
-        modelo: 'Mustang', 
-        year: 2017, 
-        precio: 60000, 
-        puertas: 2, 
-        color: 'Negro', 
-        transmision: 'manual' 
-    },
-	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
-		year: 2015,
+		nombre: 'Mario kart world',
+		consola: 'Switch',
+		year: 2025,
 		precio: 35000,
-		puertas: 2,
-		color: 'Azul',
-		transmision: 'automatico'
+		genero: 'arcade'
 	},
 	{
-		marca: 'BMW',
-		modelo: 'Serie 3',
-		year: 2018,
-		precio: 50000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
-		year: 2017,
-		precio: 80000,
-		puertas: 4,
-		color: 'Negro',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
-		year: 2018,
-		precio: 40000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
+		nombre: 'God of war: Ragnarok',
+		consola: 'pc',
+		year: 2023,
+		precio: 10000,
+		genero: 'accion'
 	},
 	{ 
-        marca: 'Audi', 
-        modelo: 'A4', 
-        year: 2016, 
-        precio: 30000, 
-        puertas: 4, 
-        color: 'Azul', 
-        transmision: 'automatico' 
+        nombre: 'Cyberpunk 2077',
+		consola: 'pc',
+		year: 2020,
+		precio: 15000,
+		genero: 'rpg'
+    },
+	{
+		nombre: 'Diablo 4',
+		consola: 'xbo',
+		year: 2022,
+		precio: 20000,
+		genero: 'terror'
+	},
+	{ 
+        nombre: 'The legend of zelda: Tears of the kingdom',
+		consola: 'switch',
+		year: 2023,
+		precio: 25000,
+		genero: 'rpg'
+    },
+	{
+		nombre: 'Ghost of Tsushima',
+		consola: 'ps5',
+		year: 2021,
+		precio: 35000,
+		genero: 'accion'
+	},
+	{
+		nombre: 'Silent hill 2',
+		consola: 'pc',
+		year: 2020,
+		precio: 15000,
+		genero: 'terror'
+	},
+	{
+		nombre: 'Lies of p',
+		consola: 'xbo',
+		year: 2019,
+		precio: 40000,
+		genero: 'accion'
+	},
+	{ 
+       nombre: 'Resident Evil 7',
+		consola: 'pc',
+		year: 2024,
+		precio: 25000,
+		genero: 'terror'
+    },
+	{
+		nombre: 'Hogwarts legacy',
+		consola: 'switch',
+		year: 2021,
+		precio: 10000,
+		genero: 'accion'
+	},
+	{
+		nombre: 'Grand theft auto v',
+		consola: 'xbo',
+		year: 2017,
+		precio: 10000,
+		genero: 'rpg'
+	},
+	{
+		nombre: 'Assassins creed odyssey',
+		consola: 'xbo',
+		year: 2020,
+		precio: 15000,
+		genero: 'accion'
+	},
+	{
+		nombre: 'Elden ring',
+		consola: 'ps5',
+		year: 2019,
+		precio: 35000,
+		genero: 'rpg'
+	},
+	{ 
+        nombre: 'Final fantasy VII',
+		consola: 'pc',
+		year: 2019,
+		precio: 15000,
+		genero: 'accion' 
     }
 ];
